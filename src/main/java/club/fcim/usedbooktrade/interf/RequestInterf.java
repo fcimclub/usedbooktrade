@@ -48,6 +48,7 @@ public class RequestInterf {
 		
 		UsedbookNotesMapper usedbooknotesmapper = dcr.getMapper(UsedbookNotesMapper.class, true);
 		usedbooknotesmapper.insert(usedbooknotes);
+		dcr.closeSession(true);
 		return 0;
 		
 	}

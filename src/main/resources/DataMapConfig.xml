@@ -7,9 +7,9 @@
 			</transactionManager>
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.jdbc.Driver" />
-				<property name="url" value="${usedbook_url}" />
-				<property name="username" value="${usedbook_username}" />
-				<property name="password" value="${usedbook_password}" />
+				<property name="url" value="jdbc:mysql://localhost/usedbook?useUnicode=true&amp;characterEncoding=UTF-8" />
+				<property name="username" value="root" />
+				<property name="password" value="012345" />
 				<property name="poolMaximumActiveConnections" value="12" />
 				<property name="poolMaximumIdleConnections" value="6" />
 				<property name="poolMaximumCheckoutTime" value="60000" />
